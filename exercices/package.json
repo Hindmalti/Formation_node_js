@@ -10,11 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "nodemon": "^2.0.2",
     "rimraf": "^2.6.1",
     "stream-equal": "1.0.0"
   },
   "devDependencies": {
-    "jasmine-fail-fast": "^2.0.0",
+    "jasmine-fail-fast": "^2.0.1",
     "jest": "24.1.0",
     "supertest": "3.3.0"
   },

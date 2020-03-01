@@ -37,12 +37,26 @@ function ensureAuthenticated(req, res, next) {
   } else res.sendStatus(401);
 }
 // TODO : refactoring. Use express router and move routes in appropriate files
+
+var router = express.Router()
+// define the home page route
+router.get('/', function (req, res) {
+  res.send('')
+})
+// define the about route
+router.get('/users', function (req, res) {
+  res.send('users')
+})
+
+module.exports = router
+
+
 module.exports = db => {
   passport.use(getUserStrategy(db));
 
   app.get("/", (req, res) => {
     db.find({ selector: { type: "school" } })
-      .then(function(results) {
+      .then(function (results) {
         res.send(results.docs);
       })
       .catch(err => {

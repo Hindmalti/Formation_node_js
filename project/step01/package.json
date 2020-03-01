@@ -1,0 +1,16 @@
+{
+  "name": "step01",
+  "version": "1.0.0",
+  "description": "On va faire un petit projet pour gérer des Sfeir Schools !",
+  "main": "run1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node run1.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0"
+  }
+}
